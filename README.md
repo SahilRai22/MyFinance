@@ -1,5 +1,9 @@
 # MyFinance
 
+![Swift Version](https://img.shields.io/badge/Swift-5.5-orange.svg)
+![SwiftUI Version](https://img.shields.io/badge/SwiftUI-3.0-blue.svg)
+![Firebase](https://img.shields.io/badge/Firebase-9.0-yellow.svg)
+
 ## Development Progress
 🚧 **This project is currently in development.** 🚧
 
