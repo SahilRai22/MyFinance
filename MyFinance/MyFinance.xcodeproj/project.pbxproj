@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C8B738682BE554D500E62BD5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8B738672BE554D500E62BD5 /* GoogleService-Info.plist */; };
+		C8B7386B2BE5550500E62BD5 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = C8B7386A2BE5550500E62BD5 /* FirebaseAnalytics */; };
+		C8B7386D2BE5550500E62BD5 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C8B7386C2BE5550500E62BD5 /* FirebaseAnalyticsSwift */; };
+		C8B738702BE556BE00E62BD5 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C8B7386F2BE556BE00E62BD5 /* FirebaseAuth */; };
+		C8B738722BE556C700E62BD5 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C8B738712BE556C700E62BD5 /* FirebaseFirestore */; };
 		C8CC80972BE5493D001C5032 /* MyFinanceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CC80962BE5493D001C5032 /* MyFinanceApp.swift */; };
 		C8CC80992BE5493D001C5032 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CC80982BE5493D001C5032 /* ContentView.swift */; };
 		C8CC809B2BE5493F001C5032 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8CC809A2BE5493F001C5032 /* Assets.xcassets */; };
@@ -14,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C8B738672BE554D500E62BD5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C8CC80932BE5493D001C5032 /* MyFinance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFinance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8CC80962BE5493D001C5032 /* MyFinanceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFinanceApp.swift; sourceTree = "<group>"; };
 		C8CC80982BE5493D001C5032 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,17 +32,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8B7386D2BE5550500E62BD5 /* FirebaseAnalyticsSwift in Frameworks */,
+				C8B738722BE556C700E62BD5 /* FirebaseFirestore in Frameworks */,
+				C8B738702BE556BE00E62BD5 /* FirebaseAuth in Frameworks */,
+				C8B7386B2BE5550500E62BD5 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C8B7386E2BE556BE00E62BD5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C8CC808A2BE5493D001C5032 = {
 			isa = PBXGroup;
 			children = (
 				C8CC80952BE5493D001C5032 /* MyFinance */,
 				C8CC80942BE5493D001C5032 /* Products */,
+				C8B7386E2BE556BE00E62BD5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +72,7 @@
 				C8CC80962BE5493D001C5032 /* MyFinanceApp.swift */,
 				C8CC80982BE5493D001C5032 /* ContentView.swift */,
 				C8CC809A2BE5493F001C5032 /* Assets.xcassets */,
+				C8B738672BE554D500E62BD5 /* GoogleService-Info.plist */,
 				C8CC809C2BE5493F001C5032 /* Preview Content */,
 			);
 			path = MyFinance;
@@ -83,6 +102,12 @@
 			dependencies = (
 			);
 			name = MyFinance;
+			packageProductDependencies = (
+				C8B7386A2BE5550500E62BD5 /* FirebaseAnalytics */,
+				C8B7386C2BE5550500E62BD5 /* FirebaseAnalyticsSwift */,
+				C8B7386F2BE556BE00E62BD5 /* FirebaseAuth */,
+				C8B738712BE556C700E62BD5 /* FirebaseFirestore */,
+			);
 			productName = MyFinance;
 			productReference = C8CC80932BE5493D001C5032 /* MyFinance.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +136,9 @@
 				Base,
 			);
 			mainGroup = C8CC808A2BE5493D001C5032;
+			packageReferences = (
+				C8B738692BE5550500E62BD5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = C8CC80942BE5493D001C5032 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +155,7 @@
 			files = (
 				C8CC809E2BE5493F001C5032 /* Preview Assets.xcassets in Resources */,
 				C8CC809B2BE5493F001C5032 /* Assets.xcassets in Resources */,
+				C8B738682BE554D500E62BD5 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +373,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C8B738692BE5550500E62BD5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.25.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C8B7386A2BE5550500E62BD5 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C8B738692BE5550500E62BD5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		C8B7386C2BE5550500E62BD5 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C8B738692BE5550500E62BD5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		C8B7386F2BE556BE00E62BD5 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C8B738692BE5550500E62BD5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		C8B738712BE556C700E62BD5 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C8B738692BE5550500E62BD5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C8CC808B2BE5493D001C5032 /* Project object */;
 }
