@@ -13,8 +13,7 @@ import FirebaseAuth
 class AppDelegate: NSObject, UIApplicationDelegate {
   func application(_ application: UIApplication,
                    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-    FirebaseApp.configure()
-
+    FirebaseApp.configure()      
     return true
   }
 }
@@ -25,7 +24,7 @@ struct MyFinanceApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+           LogInView()
         }
     }
 }
