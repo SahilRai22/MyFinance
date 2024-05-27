@@ -24,7 +24,7 @@ struct MyFinanceApp: App {
     
     var body: some Scene {
         WindowGroup {
-           LogInView()
+            RootView()
         }
     }
 }

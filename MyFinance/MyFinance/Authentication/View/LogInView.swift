@@ -20,7 +20,7 @@ struct LogInView: View {
         NavigationStack {
             VStack {
                 Text("Log in Home Page")
-                
+          
                 VStack(alignment: .center){
                     TextField(
                         "email address",
@@ -36,21 +36,12 @@ struct LogInView: View {
                 Divider()
                 
                 Button {
-                    viewModel.logIn()
+                    viewModel.logInUser()
                 } label: {
                     Text("Log In")
                 }
-                if let user = viewModel.user {
-                   Text("User logged in: \(user.email ?? "No email")")
-                       .padding()
-                }
-                           
-                if let errorMessage = viewModel.errorMessage {
-                   Text("Error: \(errorMessage)")
-                       .foregroundColor(.red)
-                       .padding()
-                }
                 
+                            
                 NavigationLink("Sign up", value:"sign_up")
             }
             .navigationDestination(for: String.self, destination: { value in

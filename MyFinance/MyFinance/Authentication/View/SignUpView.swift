@@ -27,24 +27,11 @@ struct SignUpView: View {
                     text: $viewModel.password
                 )
             }
-            
             Divider()
-            
             Button {
-                viewModel.createUser()
+                viewModel.signUpUser()
             } label: {
                 Text("Sign up")
-            }
-            
-            if let user = viewModel.user {
-               Text("User created: \(user.email ?? "No email")")
-                   .padding()
-            }
-                       
-            if let errorMessage = viewModel.errorMessage {
-               Text("Error: \(errorMessage)")
-                   .foregroundColor(.red)
-                   .padding()
             }
         }
         .padding(20)

@@ -11,12 +11,16 @@
 		C84337E82BE955820095E6E3 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84337E72BE955820095E6E3 /* LogInView.swift */; };
 		C84337EC2BE955CF0095E6E3 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84337EB2BE955CF0095E6E3 /* SignUpView.swift */; };
 		C858A64B2C03BF5600057906 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C858A64A2C03BF5600057906 /* LoginViewModel.swift */; };
+		C858A64D2C04AC4600057906 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C858A64C2C04AC4600057906 /* AuthenticationManager.swift */; };
+		C858A6502C04B31900057906 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C858A64F2C04B31900057906 /* UserModel.swift */; };
+		C858A6522C04C0F000057906 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C858A6512C04C0F000057906 /* HomeView.swift */; };
+		C858A6542C04C33100057906 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C858A6532C04C33100057906 /* RootView.swift */; };
+		C858A6582C04C5BA00057906 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C858A6572C04C5BA00057906 /* HomeViewModel.swift */; };
 		C89A9B342BFE568D00294BBC /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = C89A9B332BFE568D00294BBC /* FirebaseAnalytics */; };
 		C89A9B362BFE568D00294BBC /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C89A9B352BFE568D00294BBC /* FirebaseAuth */; };
 		C89A9B382BFE568D00294BBC /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C89A9B372BFE568D00294BBC /* FirebaseFirestore */; };
 		C8B738682BE554D500E62BD5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8B738672BE554D500E62BD5 /* GoogleService-Info.plist */; };
 		C8CC80972BE5493D001C5032 /* MyFinanceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CC80962BE5493D001C5032 /* MyFinanceApp.swift */; };
-		C8CC80992BE5493D001C5032 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CC80982BE5493D001C5032 /* ContentView.swift */; };
 		C8CC809B2BE5493F001C5032 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8CC809A2BE5493F001C5032 /* Assets.xcassets */; };
 		C8CC809E2BE5493F001C5032 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8CC809D2BE5493F001C5032 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -26,10 +30,14 @@
 		C84337E72BE955820095E6E3 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		C84337EB2BE955CF0095E6E3 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		C858A64A2C03BF5600057906 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		C858A64C2C04AC4600057906 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		C858A64F2C04B31900057906 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		C858A6512C04C0F000057906 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C858A6532C04C33100057906 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		C858A6572C04C5BA00057906 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		C8B738672BE554D500E62BD5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C8CC80932BE5493D001C5032 /* MyFinance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFinance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8CC80962BE5493D001C5032 /* MyFinanceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFinanceApp.swift; sourceTree = "<group>"; };
-		C8CC80982BE5493D001C5032 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C8CC809A2BE5493F001C5032 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8CC809D2BE5493F001C5032 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,6 +59,8 @@
 		C84337E62BE9554C0095E6E3 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				C858A64C2C04AC4600057906 /* AuthenticationManager.swift */,
+				C858A64E2C04B30800057906 /* Model */,
 				C858A6492C03BF1400057906 /* ViewModel */,
 				C858A6482C03BF0800057906 /* View */,
 			);
@@ -62,6 +72,7 @@
 			children = (
 				C84337EB2BE955CF0095E6E3 /* SignUpView.swift */,
 				C84337E72BE955820095E6E3 /* LogInView.swift */,
+				C858A6532C04C33100057906 /* RootView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -73,6 +84,14 @@
 				C858A64A2C03BF5600057906 /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C858A64E2C04B30800057906 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C858A64F2C04B31900057906 /* UserModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		C89A9B392BFE579400294BBC /* Frameworks */ = {
@@ -103,7 +122,8 @@
 			isa = PBXGroup;
 			children = (
 				C8CC80962BE5493D001C5032 /* MyFinanceApp.swift */,
-				C8CC80982BE5493D001C5032 /* ContentView.swift */,
+				C858A6512C04C0F000057906 /* HomeView.swift */,
+				C858A6572C04C5BA00057906 /* HomeViewModel.swift */,
 				C84337E62BE9554C0095E6E3 /* Authentication */,
 				C8CC809A2BE5493F001C5032 /* Assets.xcassets */,
 				C8B738672BE554D500E62BD5 /* GoogleService-Info.plist */,
@@ -199,10 +219,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C858A6522C04C0F000057906 /* HomeView.swift in Sources */,
 				C84337EC2BE955CF0095E6E3 /* SignUpView.swift in Sources */,
 				C84337E82BE955820095E6E3 /* LogInView.swift in Sources */,
+				C858A6582C04C5BA00057906 /* HomeViewModel.swift in Sources */,
+				C858A6502C04B31900057906 /* UserModel.swift in Sources */,
+				C858A6542C04C33100057906 /* RootView.swift in Sources */,
+				C858A64D2C04AC4600057906 /* AuthenticationManager.swift in Sources */,
 				C858A64B2C03BF5600057906 /* LoginViewModel.swift in Sources */,
-				C8CC80992BE5493D001C5032 /* ContentView.swift in Sources */,
 				C836F77F2BFE5007008BC599 /* SignUpViewModel.swift in Sources */,
 				C8CC80972BE5493D001C5032 /* MyFinanceApp.swift in Sources */,
 			);

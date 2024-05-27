@@ -9,19 +9,18 @@ import Foundation
 import FirebaseAuth
 
 class SignUpViewModel: ObservableObject {
-    @Published var email = "example_test@email.com"
-    @Published var password = "password123"
-    @Published var user: User? = nil
-    @Published var errorMessage: String? = nil
+    @Published var email = ""
+    @Published var password = ""
     
-    func createUser() {
-        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
-            if let error = error {
-                self.errorMessage = error.localizedDescription
-                print("Error creating user: \(error.localizedDescription)")
-            } else {
-                self.user = authResult?.user
-                print("User created successfully: \(String(describing: self.user))")
+    func signUpUser() {
+        //TODO: Add error cases for input validation
+        Task {
+            do {
+                let returnedUserData = try await AuthenticationManager.shared.createUser(email: email, password: password)
+                 print("Success: \(returnedUserData)")
+            }
+            catch {
+                print("Error: \(error)")
             }
         }
     }

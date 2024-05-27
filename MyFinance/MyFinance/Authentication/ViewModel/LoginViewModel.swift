@@ -9,23 +9,19 @@ import Foundation
 import FirebaseAuth
 
 class LoginViewModel: ObservableObject {
-    @Published var email = "example_test@email.com"
-    @Published var password = "password123"
-    @Published var user: User? = nil
-    @Published var errorMessage: String? = nil
+    @Published var email = ""
+    @Published var password = ""
     
-    func logIn(){
-        Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
-//            guard let strongSelf = self else { return }
-            
-            if let error = error {
-                self?.errorMessage = error.localizedDescription
-                print("Error logging in user: \(error.localizedDescription)")
-            } else {
-                self?.user = authResult?.user
-                print("User created successfully: \(String(describing: self?.user))")
+    func logInUser() {
+        //TODO: Add error cases for input validation
+        Task {
+            do {
+                let returnedUserData = try await AuthenticationManager.shared.logInUser(email: email, password: password)
+                 print("Success: \(returnedUserData)")
+            }
+            catch {
+                print("Error: \(error)")
             }
         }
     }
-    
 }
