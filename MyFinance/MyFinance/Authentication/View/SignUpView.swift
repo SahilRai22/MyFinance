@@ -12,8 +12,7 @@ struct SignUpView: View {
     
     var body: some View {
         VStack {
-            Text("Sign Up View")
-            
+            Spacer()
             VStack(alignment: .center){
                 TextField(
                     "email address",
@@ -21,19 +20,25 @@ struct SignUpView: View {
                 )
                 .autocapitalization(.none)
                 .disableAutocorrection(true)
-                
+                .textFieldStyle(OvalTextFieldStyle())
                 SecureField(
                     "password",
                     text: $viewModel.password
                 )
+                .textFieldStyle(OvalTextFieldStyle())
+                .disableAutocorrection(true)
             }
-            Divider()
             Button {
                 viewModel.signUpUser()
             } label: {
                 Text("Sign up")
+                .frame(maxWidth: .infinity)
             }
+            .buttonStyle(.bordered)
+            .controlSize(.large)
+            Spacer()
         }
+        .navigationTitle("Sign Up")
         .padding(20)
     }
 }
