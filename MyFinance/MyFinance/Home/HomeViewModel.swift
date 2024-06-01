@@ -12,5 +12,4 @@ class HomeViewModel: ObservableObject {
     func signOut() throws {
         try AuthenticationManager.shared.logOutUser()
     }
-
 }
